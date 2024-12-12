@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RodDPS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="dashboard/icon.png">
+    <link rel="apple-touch-icon" href="dashboard/icon.png">
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        #topBar {
+            display: flex;
+            background-color: #333;
+            justify-content: space-evenly;
+            height: 35px;
+            padding: 10px 50px;
+        }
+
+        .topElementDiv {
+            background-color: hsl(0, 0%, 50%);
+            height: min-content;
+            padding: 5px 10px;
+            border: 3px solid #000;
+            cursor: pointer;
+        }
+
+        .topElement {
+            color: #000;
+            text-decoration: none;
+        }
+
+        .mainHeader {
+            font-size: 50px;
+            margin: 15px 0px;
+        }
+
+        .announcementBox {
+            background-color: #90D5FF;
+            border: 5px solid #000;
+            border-radius: 5px;
+            width: 75%;
+            margin: 0px auto;
+            padding: 5px 0px;
+        }
+
+        .boxHeader {
+            font-size: 35px;
+        }
+
+        .boxSubheader {
+            font-size: 30px;
+            margin-top: 15px;
+        }
+
+        .note {
+            font-size: 20px;
+        }
+
+        .firstNote {
+            margin-top: 7px;
+        }
+
+        .boxEnd {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        .shamelessSelfPromo {
+            font-size: 25px;
+            margin-top: 50px;
+        }
+
+        #tooSmall {
+            display: none;
+        }
+
+        #tryAnyway {
+            display: block;
+            margin-top: 25px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: hsl(193, 100%, 40%);
+            color: #fff;
+            font-size: 20px;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 700;
+            padding: 10px;
+            border: 5px solid #000;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 200ms 50ms;
+        }
+
+        #tryAnyway:hover {
+            background-color: hsl(193, 100%, 47%);
+        }
+
+        @media screen and (max-width: 700px) {
+            #tooSmall {
+                display: block;
+            }
+
+            #working {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="tooSmall">
+        <div id="tooSmall">
+            D:
+            <br>
+            It appears that your screen is too <r>skinny</r> to display this page properly! If you're on mobile, rotate your screen horizontally. If you're on PC stretch the window.
+            <br>
+            <br>
+            If you cannot access the website no matter what, select "Try Anyway". Only use this if you have to, as things may look broken.
+            <button id="tryAnyway">Try Anyway</button>
+        </div>
+    </div>
+    <div id="working">
+    <div id="topBar">
+        <div class="topElementDiv"><a href="/dashboard" class="topElement">Dashboard</a></div>
+    </div>
+
+<div class=mainHeader>RodGDPS</div>
+
+<div class=subheader>A GDPS with:
+  <br>
+  Kind players,
+  <br>
+  Easy rates,
+  <br>
+  2.2074 support,
+  <br>
+  and more!
+  <br>
+  <br>
+  <br>
+  Site in beta.
+</div>
+
+    <div class="shamelessSelfPromo">Home page programmed by NumOne (Formerly known on RodGDPS as Lucas)<br>Everything else on the website belongs to LucasThings and the GDPSFH team</div>
+    </div>
+</body>
+
+<script type="text/javascript">
+    document.getElementById("spare?ink").onclick = function() {
+        alert('');
+    }
+
+    const notBigEnough = document.getElementById("tooSmall");
+    const bigEnough = document.getElementById("working");
+    const tryAnywayBtn = document.getElementById("tryAnyway");
+
+    tryAnywayBtn.onclick = function() {
+        notBigEnough.style.display = "none";
+        bigEnough.style.display = "block";
+    }
+</script>
+  </html>
